@@ -2,206 +2,272 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="robots" content="noindex">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chu Technologies</title>
+    <meta
+      name="description"
+      content="Innovating the future, today. Explore our solutions that shape the future."
+    />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <style>
-      body {
-        background-color: #ffffff;
-        font-family: sans-serif;
+      /* Custom container styling */
+      .container-custom,
+      .nav-container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 15px;
       }
-      main {
-        margin: 2rem auto 0;
-        width: 80ch;
-        max-width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 1rem;
-        box-sizing: border-box;
+
+      /* Brand and team image styling */
+      .brand-image {
+        width: auto;
+        height: auto;
+        max-height: 90px !important;
+        padding: 2rem;
       }
-      main > pre {
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        text-align: justify;
-        font-size: 0.7rem;
+
+      .team-image {
+        width: auto;
+        height: auto;
+        max-height: 180px !important;
+        padding: 2rem 2rem 0;
       }
-      main > p {
-        text-align: left;
-        line-height: 1.5;
-        box-sizing: border-box;
-        font-size: 0.8rem;
-        margin: 0;
-        
+
+      /* Section title styling */
+      .section-title {
+        margin-bottom: 30px;
+        text-align: center;
       }
-      h1, h2 {
-        text-align: left;
-        font-size: 0.8rem;
-        margin-top: 2rem;
-        letter-spacing: 0.4px;
+
+      /* Team member styling */
+      .team-member {
+        text-align: center;
       }
-      .p {
-        margin: 1rem 0 0 0;
+
+      /* Brand category section margin */
+      .brand-category {
+        margin-top: 40px;
       }
-      .p-p {
-        font-size: 0.8rem;
-        letter-spacing: 0.4px;
-        line-height: 1.5;
-        margin-bottom: 0;
-        max-width: 70ch;
+
+      .thumbnail {
+        height: 290px;
       }
-      .p-a {
-        color: blue;
-        font-size: 0.75rem;
-        letter-spacing: 0.4px;
-        line-height: 1.5;
-      }
-      .tenets {
-        font-size: 0.8rem;
-        line-height: 1.5;
-        margin: 2rem 0 0;
-      }
-      .tenets-h {
-        font-weight: bold;
-      }
-      .tenets-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 1rem 0 0.4rem;
-      }
-      .dotted {
-        flex: 1 1 auto;
-        border-bottom: 1px dotted black;
-        height: 0.7rem;
-      }
-      .tenets p {
-        margin: 0;
+
+      /* Mobile-specific styling */
+      @media (max-width: 767px) {
+        body {
+          overflow-x: hidden;
+        }
+
+        .container-custom {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
       }
     </style>
   </head>
   <body>
-    <main>
-      <pre>
-    +--------------------+
-    |  Chu Technologies  |
-    +--------------------+
-      |                |
-\./,,.|,.;/,,....,\/.,,|..,.\./,.
-        </pre
-      >
-      <h1>chu</h1>
-      <p>what we like, we do<br />
-        hands stained in paint<br />
-        they have no clue</p>
-      <div class="tenets">
-        <div class="tenets-h">tenets</div>
-        <div class="tenets-header">
-          <div>Why not?</div>
-          <div class="dotted"></div>
-          <div>00</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+      <div class="nav-container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Chu Technologies</a>
         </div>
-        <p>Never say no immediately. Instead, consider how to make things work.</p>
-    
-        <div class="tenets-header">
-          <div>Do first, ask later</div>
-          <div class="dotted"></div>
-          <div>01</div>
-        </div>
-        <p>Rules are made to be challenged by those unafraid of work, and laws are meant to be rewritten by those who succeed.</p>
-
-        <div class="tenets-header">
-          <div>Better to fail than to never try</div>
-          <div class="dotted"></div>
-          <div>02</div>
-        </div>
-        <p>When you fail, the world forgives. We learn best through our attempts at success.</p>
-
-        <div class="tenets-header">
-          <div>Nobody knows what's going on</div>
-          <div class="dotted"></div>
-          <div>03</div>
-        </div>
-        <p>The blind may lead the blind, but work hard, for those in front have a better view than those behind.</p>
-
-        <div class="tenets-header">
-          <div>Two > One</div>
-          <div class="dotted"></div>
-          <div>04</div>
-        </div>
-        <p>As iron sharpens iron, so one person sharpens another. Discuss, ask and improve your ideas.</p>
-
-        <div class="tenets-header">
-          <div>Solutions, not problems.</div>
-          <div class="dotted"></div>
-          <div>05</div>
-        </div>
-        <p>It is easy to find fault with ideas, but challenging to come up with workarounds to see the idea through.</p>
-
-        <div class="tenets-header">
-          <div>To persuade, think like them.</div>
-          <div class="dotted"></div>
-          <div>06</div>
-        </div>
-        <p>Put yourself in others' shoes and consider why they might reject your ideas.</p>
-
-        <div class="tenets-header">
-          <div>The world is lego.</div>
-          <div class="dotted"></div>
-          <div>07</div>
-        </div>
-        <p>Everything assembled can be taken apart and its creation process can be learnt. There is no magic in the world. If all else fails, do it yourself. </p>
-
-        <div class="tenets-header">
-          <div>Be humble, they probably know more than you do.</div>
-          <div class="dotted"></div>
-          <div>08</div>
-        </div>
-        <p>Listen to what others have to say and give more weight to words by older humans.</p>
-
-        <div class="tenets-header">
-          <div>Lose to win customers.</div>
-          <div class="dotted"></div>
-          <div>09</div>
-        </div>
-        <p>Put your ego down. Make your customers happy, regardless of the situation.</p>
-
-        <div class="tenets-header">
-          <div>Turn left when everyone turns right.</div>
-          <div class="dotted"></div>
-          <div>10</div>
-        </div>
-        <p>Be contrarian. Life is too short to always be right.</p>
-      </div>
-      <div>
-        <h2>branches</h2>
-        <div class="p">
-          <p class="p-p">Slow Boat &middot;「 slow rhythms, warm coffee 」&middot; Coming soon.</p>
-          <a class="p-a" href="https://slowboat.sg/" target="_blank">Slow Boat</a>
-        </div>
-        <div class="p">
-          <p class="p-p">Hey &middot; PayNow-focused POS system &middot; Coming soon.</p>
-          <a class="p-a" href="https://hey.sg/" target="_blank">Hey</a>
-        </div>
-        <div class="p">
-          <p class="p-p">Fotomat&trade; is Singapore's first self photography studio. Hidden in plain sight, lies a place where black meets white.</p>
-          <a class="p-a" href="https://fotomatstudios.com/" target="_blank">Fotomat Studios</a>
-        </div>
-        <div class="p">
-          <p class="p-p">TAKE A MEMORY FOR THE MOMENT. Receipt photo booth printers for rent in Singapore.</p>
-          <a class="p-a" href="https://paperblock.co/" target="_blank">Paper Block</a>
-        </div>
-        <div class="p">
-          <p class="p-p">Capture authentic voices and heartfelt messages at your wedding, birthday, anniversary, or any memorable event. Make your special day a lasting audio memory.</p>
-          <a class="p-a" href="https://beep.sg/" target="_blank">After The Beep</a>
-        </div>
-        <div class="p">
-          <p class="p-p">Send a personalised poem to your friends and family. A meaningful gift unique to your shared experiences.</p>
-          <a class="p-a" href="https://poetrybypost.net/" target="_blank">Poetry By Post</a>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
         </div>
       </div>
-    </main>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron text-center">
+      <div class="container-custom">
+        <h1>Welcome to Chu Technologies</h1>
+        <p>Innovating the future, today</p>
+      </div>
+    </header>
+
+    <!-- Our Brands Section -->
+    <section id="brands" class="container-custom">
+      <h2 class="section-title">Our Brands</h2>
+
+      <!-- Retail Brands -->
+      <div class="brand-category">
+        <h3>Retail</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img
+                src="/assets/img/fotomat.png"
+                alt="Fotomat Studios"
+                class="brand-image"
+              />
+              <div class="caption">
+                <h3>Fotomat Studios</h3>
+                <p>
+                  Singapore's first black and white self-photography studio.
+                </p>
+                <p>Established 2021</p>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Links <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a target="_blank" href="https://fotomatstudios.com/"
+                        >View Webpage</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://fotomatstudios.com/contact"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img
+                src="/assets/img/slowboat.jpg"
+                alt="Slow Boat"
+                class="brand-image"
+              />
+              <div class="caption">
+                <h3>Slow Boat</h3>
+                <p>Vinyl listening cafe and record store.</p>
+                <p>Established 2023</p>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Links <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a target="_blank" href="https://slowboat.sg/"
+                        >View Webpage</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://slowboat.sg/pages/contact"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technology Brands -->
+      <div class="brand-category">
+        <h3>Technology</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img
+                src="/assets/img/supertutor.png"
+                alt="Slow Boat"
+                class="brand-image"
+              />
+              <div class="caption">
+                <h3>Super Tutor</h3>
+                <p>
+                  Super Tutor is your personal tutor and study buddy app for
+                  Singapore students.
+                </p>
+                <p>Established 2024</p>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Links <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a target="_blank" href="https://supertutor.com.sg/"
+                        >View Webpage</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="container-custom">
+      <h2 class="section-title">Our Team</h2>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <div class="thumbnail team-member">
+            <img
+              src="/assets/img/kevin.jpg"
+              alt="Kevin Chu"
+              class="team-image"
+            />
+            <div class="caption">
+              <h3>Kevin Chu</h3>
+              <p>Technologies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container-custom">
+        <p>
+          &copy; 2019-2024 Chu Technologies Private Limited. Registered in
+          Singapore. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
   </body>
 </html>
